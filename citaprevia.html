@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+	<title>Cita previa</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="estil.css">
+	<h1>Perruqueria <span>Carlos Borrull Ruano</span></h1>
+</head>
+
+<body>
+	<nav class="navbar">
+		<ul>
+			<li><a href="inici.html">Inici</a></li>
+			<li><a href="servicis.html">Servicis</a></li>
+			<li><a href="tallades.html">Tallades de cabells</a></li>
+			<li><a href="direccio.html">Direcció</a></li>
+			<li><a href="instalacions.html">Instal·lacions</a></li>
+			<li><a href="horari.html">Horari</a></li>
+			<li><a href="ressenyes.html">Ressenyes</a></li>
+			<li><a href="citaprevia.html">Cita previa</a></li>
+			<li><a href="quisom.html">Qui som?</a></li>
+		</ul>
+	</nav>
+	<div>
+		<h2>Cita previa</h2>
+		<p>Pots demanar cita prèvia omplint aquest formulari o trucant al telèfon:<strong>963 328 011</strong>.</p>
+	</div>
+	<div>
+		<form action="/action_page.php" target="_blank" method="post">
+			<fieldset>
+				<legend>Nom i cognoms:</legend><label for="fname">Nom:</label><br><input type="text" id="dades"
+					name="fname"><br><label for="lname">Cognoms:</label><br><input type="text" id="dades"
+					name="lname"><br>
+			</fieldset>
+			<fieldset>
+				<legend>Día:</legend><input type="date" id="dia" name="reserva"><br>
+			</fieldset>
+			<fieldset>
+				<legend>Torn:</legend><input type="radio" id="horari" name="sesio" value="horari"><label
+					for="sesio">Matins</label><br><input type="radio" id="horari" name="sesio" value="horari"><label
+					for="sesio">Vesprades</label><br>
+			</fieldset>
+			<fieldset>
+				<legend>Tipus de tallat:</legend><select id="tallades" name="servicis">
+					<option value="cavaller">Tall de cavaller</option>
+					<option value="xiquet">Tall de xiquet</option>
+					<option value="jubilat">Tall de jubilat</option>
+					<option value="xiquet">Afeitat</option>
+					<option value="jubilat">Arreglo de barba</option>
+					<option value="jubilat">Arreglo de barba amb afeitat</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Notes i comentaris:</legend><label for="info">Informació adicional:</label><br><textarea
+					name="message" rows="5" cols="70">Comentaris adicionals...</textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Enviar dades:</legend><input type="submit" value="Reservar torn">
+			</fieldset>
+		</form>
+	</div>
+	<hr>
+	<footer>Perruqueria Carlos Borrull Ruano - Telèfon: 963 328 011 - Direcció: Carrer L'Amistat, 4, 46021, València
+	</footer>
+</body>
+
+</html>
