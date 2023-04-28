@@ -71,31 +71,36 @@
     Nous horaris a partir del 1 de gener de 2022.
   </div>
   <!-- OFFCANVAS + COLLAPSE -->
-  <button class="btn btn-primary d-flex justify-content-end" type="button" data-bs-toggle="offcanvas"
+  <button class="btn btn-primary row justify-content-center m-3" type="button" data-bs-toggle="offcanvas"
     data-bs-target="#offcanvasWithBothOptions1" aria-controls="offcanvasWithBothOptions1">Horari d'hivern</button>
 
   <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions1"
     aria-labelledby="offcanvasWithBothOptionsLabel1">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel1">Horari d'hivern</h5>
+      <h5 class="offcanvas-title fw-bold fs-2" id="offcanvasWithBothOptionsLabel1">Horari d'hivern</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <p>Try scrolling the rest of the page to see this option in action.</p>
+      <p>
+        <span class="fw-bold">Dilluns a Divendres:</span> <span class="text-bg-success">09:00-13:30 i
+          16:00-20:00</span><br>
+        <span class="fw-bold">Dissabtes i Diumenges:</span> <span class="text-bg-danger">Tancat</span><br>
+        <span class="fw-bold">Festius:</span> <span class="text-bg-danger">Tancat</span>
+      </p>
     </div>
   </div>
   <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions2"
     aria-controls="offcanvasWithBothOptions2">Horari d'estiu</button>
 
   <p>
-    <button class="btn btn-primary d-flex justify-content-center" type="button" data-bs-toggle="collapse"
+    <button class="btn btn-primary row justify-content-center m-3" type="button" data-bs-toggle="collapse"
       data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
       Festius 2023
     </button>
   </p>
   <div style="min-height: 120px;">
     <div class="collapse collapse-horizontal" id="collapseWidthExample">
-      <div class="card card-body text-bg-dark" style="width: 480px;">
+      <div class="card card-body text-bg-dark m-3" style="width: 480px;">
         6 de enero. Día de Reyes, viernes.<br>
         7 de abril. Viernes Santo.<br>
         10 de abril. Lunes de Pascua.<br>
@@ -112,14 +117,20 @@
     </div>
   </div>
 
-  <div class="offcanvas offcanvas-end text-bg-dark d-flex justify-content-start" data-bs-scroll="true" tabindex="-1"
+  <div class="offcanvas offcanvas-end text-bg-dark row justify-content-center" data-bs-scroll="true" tabindex="-1"
     id="offcanvasWithBothOptions2" aria-labelledby="offcanvasWithBothOptionsLabel2">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel2">Horari d'estiu</h5>
+      <h5 class="offcanvas-title fw-bold fs-2" id="offcanvasWithBothOptionsLabel2">Horari d'estiu</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <p>Try scrolling the rest of the page to see this option in action.</p>
+      <p>
+        <span class="fw-bold">Dilluns a Divendres:</span> <span class="text-bg-success">09:00-13:30 i
+          16:00-20:00</span><br>
+        <span class="fw-bold">Dissabtes:</span> <span class="text-bg-success">09:00-13:30</span><br>
+        <span class="fw-bold">Diumenges:</span> <span class="text-bg-danger">Tancat</span><br>
+        <span class="fw-bold">Festius:</span> <span class="text-bg-danger">Tancat</span>
+      </p>
     </div>
   </div>
   <!-- FOOTER -->
