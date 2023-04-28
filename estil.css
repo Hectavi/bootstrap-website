@@ -50,7 +50,7 @@ nav-link:hover::after {
 
 
 /*FORMULARI*/
-#nom {
+#nomcognom {
     display: flex;
     gap: 10px;
 }
