@@ -28,7 +28,7 @@
             <a class="nav-link text-light fw-bold" aria-current="page" href="index.html">Inici</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light fw-bold active" href="servicis.html">Serveis</a>
+            <a class="nav-link text-light fw-bold" href="servicis.html">Serveis</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-light fw-bold" href="tallades.html">Tallats</a>
@@ -43,7 +43,7 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-dark">
               <li><a class="dropdown-item text-light fw-bold" href="exterior.html">Exterior</a></li>
-              <li><a class="dropdown-item text-light fw-bold" href="interior.html">Interior</a></li>
+              <li><a class="dropdown-item text-light fw-bold active" href="interior.html">Interior</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -63,34 +63,53 @@
       </div>
     </div>
   </nav>
-  <!-- ALERT + LIST GROUP -->
-  <div class="alert alert-success col-6 fw-bold" role="alert">
-    Tallat gratuït per a jubilats i pensionistes fins al mes de juny!
+  <!-- CAROUSEL -->
+  <div id="carouselExampleIndicators" class="mx-auto carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+        aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+        aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="images/interior1.jpg" class="d-block w-50 mx-auto" alt="interior1">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="images/interior2.jpg" class="d-block w-50 mx-auto" alt="interior2">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="images/interior3.jpg" class="d-block w-50 mx-auto" alt="interior3">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="images/interior4.jpg" class="d-block w-50 mx-auto" alt="interior4">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="images/interior5.jpg" class="d-block w-50 mx-auto" alt="interior5">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="images/interior6.jpg" class="d-block w-50 mx-auto" alt="interior6">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <ul class="justify-content-center list-group list-group-horizontal">
-    <li class="list-group-item bg-primary text-light fw-bold">13€</li>
-    <li class="list-group-item bg-primary text-light fw-bold">Tallat de cavaller</li>
-  </ul>
-  <ul class="justify-content-center list-group list-group-horizontal">
-    <li class="list-group-item bg-primary text-light fw-bold">10€</li>
-    <li class="list-group-item bg-primary text-light fw-bold">Tallat de xiquet</li>
-  </ul>
-  <ul class="justify-content-center list-group list-group-horizontal">
-    <li class="list-group-item bg-primary text-light fw-bold">10€</li>
-    <li class="list-group-item bg-primary text-light fw-bold">Tallat de jubilat</li>
-  </ul>
-  <ul class="justify-content-center list-group list-group-horizontal">
-    <li class="list-group-item bg-primary text-light fw-bold">7€</li>
-    <li class="list-group-item bg-primary text-light fw-bold">Afeitat</li>
-  </ul>
-  <ul class="justify-content-center list-group list-group-horizontal">
-    <li class="list-group-item bg-primary text-light fw-bold">5€</li>
-    <li class="list-group-item bg-primary text-light fw-bold">Arreglo de barba</li>
-  </ul>
-  <ul class="justify-content-center list-group list-group-horizontal mb-3">
-    <li class="list-group-item bg-primary text-light fw-bold">8€</li>
-    <li class="list-group-item bg-primary text-light fw-bold ">Arreglo de barba amb afeitat</li>
-  </ul>
   <!-- FOOTER -->
   <footer class="d-flex border-top border-3 align-items-center justify-content-center flex-wrap">
     <p class="fs-5 px-3 pt-3 ">Perruqueria Carlos Borrull Ruano. &copy; Tots el drets reservats 2023</p>
