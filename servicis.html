@@ -2,64 +2,105 @@
 <html lang="ca">
 
 <head>
-	<title>Servicis</title>
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="estil.css">
-	<h1>Perruqueria <span>Carlos Borrull Ruano</span></h1>
+  <title>Perruqueria Carlos Borrull Ruano</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="estil.css">
 </head>
 
-<body>
-	<nav class="navbar">
-		<ul>
-			<li><a href="inici.html">Inici</a></li>
-			<li><a href="servicis.html">Servicis</a></li>
-			<li><a href="tallades.html">Tallades de cabells</a></li>
-			<li><a href="direccio.html">Direcció</a></li>
-			<li><a href="instalacions.html">Instal·lacions</a></li>
-			<li><a href="horari.html">Horari</a></li>
-			<li><a href="ressenyes.html">Ressenyes</a></li>
-			<li><a href="citaprevia.html">Cita previa</a></li>
-			<li><a href="quisom.html">Qui som?</a></li>
-		</ul>
-	</nav>
-	<h2>Servicis</h2>
-	<p>Aquestos són els nostres servicis.</p>
-	<div>
-		<table border="">
-			<tr>
-				<th>Servici</th>
-				<th>Preu</th>
-			</tr>
-			<tr>
-				<td>Tall de cavaller</td>
-				<td>13€</td>
-			</tr>
-			<tr>
-				<td>Tall de xiquet</td>
-				<td>10€</td>
-			</tr>
-			<tr>
-				<td>Tall de jubilat</td>
-				<td>10€</td>
-			</tr>
-			<tr>
-				<td>Afeitat</td>
-				<td>8€</td>
-			</tr>
-			<tr>
-				<td>Arreglo de barba</td>
-				<td>5€</td>
-			</tr>
-			<tr>
-				<td>Arreglo de barba amb afeitat</td>
-				<td>8€</td>
-			</tr>
-		</table>
-	</div>
-	<br>
-	<hr>
-	<footer>Perruqueria Carlos Borrull Ruano - Telèfon: 963 328 011 - Direcció: Carrer L'Amistat, 4, 46021, València
-	</footer>
+<body class="bg-dark text-light">
+  <!-- HEADER -->
+  <header class="container-fluid bg-primary d-flex justify-content-center">
+    <p class="mb-0 p-1 fs-1 fw-bold">💈Perruqueria <span class="text-danger">Carlos Borrull Ruano</span>💈</p>
+  </header>
+  <!-- NAVBAR + TABS + DROPDOWN -->
+  <nav class="navbar navbar-expand-lg p-3 nav nav-pills nav-justified flex-column flex-sm-row">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold" aria-current="page" href="index.html">Inici</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold active" href="servicis.html">Serveis</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold" href="tallades.html">Tallats</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold" href="direccio.html">Direcció</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light fw-bold" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Instal·lacions
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item text-light fw-bold" href="exterior.html">Exterior</a></li>
+              <li><a class="dropdown-item text-light fw-bold" href="interior.html">Interior</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold" href="horari.html">Horari</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold" href="ressenyes.html">Ressenyes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold" href="citaprevia.html">Cita<span
+                class="text-danger">.</span>Previa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light fw-bold" href="quisom.html">Qui<span class="text-danger">.</span>Som?</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ALERT + SPINNER -->
+  <div class="alert alert-success col-11 fw-bold fs-2 m-3" role="alert">
+    <div class="spinner-grow text-success" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+    Tallat gratuït per a jubilats i pensionistes fins al mes de juny!
+  </div>
+  <!-- LIST GROUP -->
+  <ul class="justify-content-center list-group list-group-horizontal m-3">
+    <li class="list-group-item bg-primary text-light fw-bold">13€</li>
+    <li class="list-group-item bg-primary text-light fw-bold">Tallat de cavaller</li>
+  </ul>
+  <ul class="justify-content-center list-group list-group-horizontal m-3">
+    <li class="list-group-item bg-primary text-light fw-bold">10€</li>
+    <li class="list-group-item bg-primary text-light fw-bold">Tallat de xiquet</li>
+  </ul>
+  <ul class="justify-content-center list-group list-group-horizontal m-3">
+    <li class="list-group-item bg-primary text-light fw-bold">10€</li>
+    <li class="list-group-item bg-primary text-light fw-bold">Tallat de jubilat</li>
+  </ul>
+  <ul class="justify-content-center list-group list-group-horizontal m-3">
+    <li class="list-group-item bg-primary text-light fw-bold">7€</li>
+    <li class="list-group-item bg-primary text-light fw-bold">Afeitat</li>
+  </ul>
+  <ul class="justify-content-center list-group list-group-horizontal m-3">
+    <li class="list-group-item bg-primary text-light fw-bold">5€</li>
+    <li class="list-group-item bg-primary text-light fw-bold">Arreglo de barba</li>
+  </ul>
+  <ul class="justify-content-center list-group list-group-horizontal m-3">
+    <li class="list-group-item bg-primary text-light fw-bold">8€</li>
+    <li class="list-group-item bg-primary text-light fw-bold ">Arreglo de barba amb afeitat</li>
+  </ul>
+  <!-- FOOTER -->
+  <footer class="d-flex border-top border-3 align-items-center justify-content-center flex-wrap">
+    <p class="fs-5 px-3 pt-3 ">Perruqueria Carlos Borrull Ruano. &copy; Tots el drets reservats 2023</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
